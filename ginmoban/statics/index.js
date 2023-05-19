@@ -1,0 +1,1 @@
+alert('我是css的js版本')

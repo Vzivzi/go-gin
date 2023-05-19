@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+</head>
+<body>
+    <h1>测试嵌套语法</h1>
+    {{template "ul.tmpl"}}
+    <hr>
+    {{template "ol.tmpl"}}
+    <hr>
+    我是{{ . }}
+</body>
+</html>
+{{ define "ol.tmpl"}}
+    <ol>
+        <li>喝奶茶</li>
+        <li>睡觉</li>
+        <li>打游戏</li>
+    </ol>
+{{end}}
